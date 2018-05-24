@@ -18,7 +18,11 @@ def assign_rooms(namelist)
   return roomassign
 end
 
-def printer
-  puts batch_badge_creator
-  puts assign_rooms
+def printer(names)
+  batch_badge_creator(names).each do |x|
+    puts x
+  end
+  assign_rooms(names).each do |x|
+    puts x
+  end
 end
