@@ -12,4 +12,8 @@ end
 
 def assign_rooms(namelist)
   roomassign = []
-  namelist.each_with_index()
+  namelist.each_with_index do |name, index|
+    roomassign << "Hello, #{name}! You'll be assigned to room #{index + 1}!"
+  end
+  return roomassign
+end
