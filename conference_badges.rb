@@ -10,4 +10,6 @@ def batch_badge_creator(namearray)
   badgearray
 end
 
-def assign_rooms
+def assign_rooms(namelist)
+  roomassign = []
+  namelist.each_with_index()
